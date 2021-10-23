@@ -1,0 +1,586 @@
+
+1)Define the types of Operating System?
+ANS>>
+An Operating System (OS) is a software that acts as an interface between computer hardware components and the user. 
+Every computer system must have at least one operating system to run other programs. Applications like Browsers, MS Office, Notepad Games,
+etc., need some environment to run and perform its tasks.
+The OS helps you to communicate with the computer without knowing how to speak the computer’s language.
+tYPES OF OS-:
+Batch OS.
+Distributed OS.
+Multitasking OS.
+Network OS.
+Real-OS.
+Mobile OS.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2) What is DHCP?
+ans>>
+Stands for "Dynamic Host Configuration Protocol." DHCP is a protocol that automatically assigns
+a unique IP address to each device that connects to a network. 
+When you connect to a network, your device is considered a client and the router is the server. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3) What is DNS?
+ANS>>
+Domain Name Server (DNS) is a standard protocol that helps Internet users discover websites using human readable addresses. 
+Like a phonebook which lets you look up the name of a person and discover their number, DNS lets you type the address of a website 
+and automatically discover the Internet Protocol (IP) address for that website.
+Without DNS, the Internet would collapse - it would be impossible for people and machines to access Internet servers via the 
+friendly URLs they have come to know.
+(DNS) is a naming database in which internet domain names are located and translated into Internet Protocol (IP) addresses.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4) Expalin Paging?
+ANS>>
+in Operating Systems, Paging is a storage mechanism used to retrieve processes from the secondary storage into the main memory 
+in the form of pages.
+The main idea behind the paging is to divide each process in the form of pages. 
+The main memory will also be divided in the form of frames.
+One page of the process is to be stored in one of the frames of the memory. 
+The pages can be stored at the different locations of the memory but the priority is always to find the contiguous frames or holes.
+Pages of the process are brought into the main memory only when they are required otherwise they reside in the secondary storage.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 5) Explain segmentation ?
+Ans: In Operating Systems, Segmentation is a memory management technique in which the memory is divided into the variable size parts. Each part is known as a 
+segment which can be allocated to a process.
+
+The details about each segment are stored in a table called a segment table. Segment table is stored in one (or many) of the segments.
+
+Segment table contains mainly two information about segment:
+
+Base: It is the base address of the segment
+Limit: It is the length of the segment.
+    Advantages of Segmentation :
+1)No internal fragmentation
+2)Average Segment Size is larger than the actual page size.
+3)Less overhead
+4)It is easier to relocate segments than entire address space.
+5)The segment table is of lesser size as compared to the page table in paging.
+     Disadvantages :
+1)It can have external fragmentation.
+2)it is difficult to allocate contiguous memory to variable sized partition.
+3)Costly memory management algorithms.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 6) Explain Memory management ?
+Ans : Memory management is the functionality of an operating system which handles or manages primary memory and moves processes back and forth between main 
+memory and disk during execution. Memory management keeps track of each and every memory location, regardless of either it is allocated to some process or it
+is free.It checks how much memory is to be allocated to processes. It decides which process will get memory at what time. It tracks whenever some memory gets 
+freed or unallocated and correspondingly it updates the status.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 7) Explain the function of OS ?
+Ans : An operating system is a program that acts as a user-computer GUI (Graphical user interface). It controls the execution of all types of applications.
+
+The operating system performs the following functions in a device.
+
+1)Instruction
+2)Input/output Management
+3)Memory Management
+4)File Management
+5)Processor Management
+6)Job Priority
+7)Special Control Program
+8)Scheduling of resources and jobs
+9)Security
+10)Monitoring activities
+
+Instruction: The operating system establishes a mutual understanding between the various instructions given by the user.
+
+Input/output Management: What output will come from the input given by the user, the operating system runs this program. This management involves coordinating
+ various input and output devices. It assigns the functions of those devices where one or more applications are executed.
+
+
+Memory Management: The operating system handles the responsibility of storing any data, system programs, and user programs in memory. This function of the 
+operating system is called memory management.
+
+File Management: The operating system is helpful in making changes in the stored files and in replacing them. It also plays an important role in transferring 
+various files to a device.
+
+Processor Management: The processor is the execution of a program that accomplishes the specified work in that program. It can be defined as an execution unit
+ where a program runs.
+
+Job Priority: The work of job priority is creation and promotion. It determines what action should be done first in a computer system.
+
+Special Control Program: The operating systems make automatic changes to the task through specific control programs. These programs are called Special Control Program.
+
+Scheduling of resources and jobs: The operating system prepares the list of tasks to be performed for the device of the computer system. The operating system
+decides which device to use for which task. This action becomes complicated when multiple tasks are to be performed simultaneously in a computer system. 
+The scheduling programs of the operating system determine the order in which tasks are completed. It performs these tasks based on the priority of performing 
+the tasks given by the user. It makes the tasks available based on the priority of the device.
+
+Security: Computer security is a very important aspect of any operating system. The reliability of an operating system is determined by how much better security 
+it provides us. Modern operating systems use a firewall for security. A firewall is a security system that monitors every activity happening in the computer and 
+blocks that activity in case of any threat.
+
+Monitoring activities: The operating system takes care of the activities of the computer system during various processes. This aborts the program if there are errors.
+ The operating system sends instant messages to the user for any unexpected error in the input/output device. It also provides security to the system when the 
+operating system is used in systems operated by multiple users. So that illegal users cannot get data from the system.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 8) Explain a Kernel ? Its Architecture and working ?
+Ans : Kernel is central component of an operating system that manages operations of computer and hardware. It basically manages operations of memory and CPU time. 
+It is core component of an operating system. Kernel acts as a bridge between applications and data processing performed at hardware level using inter-process 
+communication and system calls.
+
+Kernel loads first into memory when an operating system is loaded and remains into memory until operating system is shut down again. It is responsible for various
+ tasks such as disk management, task management, and memory management.
+It decides which process should be allocated to processor to execute and which process should be kept in main memory to execute. It basically acts as an interface 
+between user applications and hardware. The major aim of kernel is to manage communication between software i.e. user-level applications and hardware i.e.,
+ CPU and disk memory.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9.Explain a shell script?
+Ans: A shell script is a text file that contains a sequence of commands for a UNIX-based operating system. It is called a shell script because it combines a 
+sequence of commands, that would otherwise have to be typed into the keyboard one at a time, into a single script. The shell is the operating system's 
+command-line interface (CLI) and interpreter for the set of commands that are used to communicate with the system.
+
+A shell script is usually created for command sequences in which a user has a need to use repeatedly in order to save time. Like other programs, the shell
+ script can contain parameters, comments and subcommands that the shell must follow. Users initiate the sequence of commands in the shell script by simply
+ entering the file name on a command line.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+10.Explain a page fault?
+Ans:In computing, a page fault (sometimes called PF or hard fault)[a] is an exception that the memory management unit (MMU) raises when a process accesses
+ a memory page without proper preparations. Accessing the page requires a mapping to be added to the process's virtual address space. Besides, the actual
+ page contents may need to be loaded from a backing store, such as a disk. The MMU detects the page fault, but the operating system's kernel handles the 
+exception by making the required page accessible in the physical memory or denying an illegal memory access.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+11.Explain a deadlock?
+Ans:Deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by
+ some other process. A similar situation occurs in operating systems when there are two or more processes that hold some resources and wait for resources
+ held by other(s).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+12.Define the necessary conditions for deadlock?
+Ans:There are 4 conditions necessary for the occurrence of a deadlock. They can be understood with the help of the above illustrated example of staircase :
+
+    Mutual Exclusion:
+    When two people meet in the landings, they can’t just walk through because there is space only for one person. This condition to allow only one person
+ (or process) to use the step between them (or the resource) is the first condition necessary for the occurrence of the deadlock.
+    Hold and Wait:
+    When the 2 people refuses to retreat and hold their grounds, it is called holding. This is the next necessary condition for the the deadlock.
+    No Preemption:
+    For resolving the deadlock one can simply cancel one of the processes for other to continue. But Operating System doesn’t do so. It allocates the
+ resources to the processors for as much time needed until the task is completed. Hence, there is no temporary reallocation of the resources. It is third 
+condition for deadlock.
+    Circular Wait:
+    When the two people refuses to retreat and wait for each other to retreat, so that they can complete their task, it is called circular wait. It is the
+ last condition for the deadlock to occur.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+13.Explain a semaphore?
+Ans:Semaphore is simply a variable that is non-negative and shared between threads. A semaphore is a signaling mechanism, and a thread that is waiting 
+on a semaphore can be signaled by another thread. It uses two atomic operations, 1)wait, and 2) signal for the process synchronization.
+Here, are characteristic of a semaphore:
+    It is a mechanism that can be used to provide synchronization of tasks.
+    It is a low-level synchronization mechanism.
+    Semaphore will always hold a non-negative integer value.
+    Semaphore can be implemented using test operations and interrupts, which should be executed using file descriptors.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+14.Explain a mutex?
+Ans:A mutex is a binary variable whose purpose is to provide locking mechanism. It is used to provide mutual exclusion to a section of code, means only
+ one process can work on a particular code section at a time. 
+There is misconception that binary semaphore is same as mutex variable but both are different in the sense that binary semaphore apart from providing 
+locking mechanism also provides two atomic operation signal and wait, means after releasing resource semaphore will provide signaling mechanism for the
+ processes who are waiting for the resource.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+15.Difference among kernel space and user space. 
+Ans:	User level thread						Kernel level thread
+User thread are implemented by users.				kernel threads are implemented by OS.
+OS doesn’t recognized user level threads.			Kernel threads are recognized by OS.
+Implementation of User threads is easy.				Implementation of Kernel thread is complicated.
+Context switch time is less.					Context switch time is more.
+Context switch requires no hardware support.			Hardware support is needed.
+If one user level thread perform blocking operation 
+then entire process will be blocked.				If one kernel thread perform blocking operation then another thread can continue execution.
+User level threads are designed as dependent threads.		Kernel level threads are designed as independent threads.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+16.Write in brief the ping command.
+Ans:PING (Packet Internet Groper) command is used to check the network connectivity between host and server/host. This command takes as input the 
+IP address or the URL and sends a data packet to the specified address with the message “PING” and get a response from the server/host this time is
+ recorded which is called latency. Fast ping low latency means faster connection. Ping uses ICMP(Internet Control Message Protocol) to send an ICMP 
+echo message to the specified host if that host is available then it sends ICMP reply message
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+17] . Explain UNIX?
+Unix is a portable, multitasking, multiuser, time-sharing operating system (OS) originally developed in 1969 by a group of employees at AT&T.
+ Unix was first programmed in assembly language but was reprogrammed in C in 1973. ... Unix operating systems are widely used in PCs, servers
+ and mobile devices.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+18.] Explain grep?
+The grep filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. The pattern that 
+is searched in the file is referred to as the regular expression (grep stands for globally search for regular expression and print out). 
+Syntax: 
+grep [options] pattern [files]
+
+Options Description
+-c : This prints only a count of the lines that match a pattern
+-h : Display the matched lines, but do not display the filenames.
+-i : Ignores, case for matching
+-l : Displays list of a filenames only.
+-n : Display the matched lines and their line numbers.
+-v : This prints out all the lines that do not matches the pattern
+-e exp : Specifies expression with this option. Can use multiple times.
+-f file : Takes patterns from file, one per line.
+-E : Treats pattern as an extended regular expression (ERE)
+-w : Match whole word
+-o : Print only the matched parts of a matching line,
+ with each such part on a separate output line.
+
+-A n : Prints searched line and nlines after the result.
+-B n : Prints searched line and n line before the result.
+-C n : Prints searched line and n lines after before the result.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+19] Explain pipe?
+Pipe is used to combine two or more commands, and in this, the output of one command acts as input to another command, and this
+ command’s output may act as input to the next command and so on.
+Syntax :
+command_1 | command_2 | command_3 | .... | command_N 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+20]. Difference among Thread & Process.
+A process is an active program i.e. a program that is under execution. It is more than the program code as it includes the program 
+counter, process stack, registers, program code etc. Compared to this, the program code is only the text section.
+
+A thread is a lightweight process that can be managed independently by a scheduler. It improves the application performance using 
+parallelism. A thread shares information like data segment, code segment, files etc. with its peer threads while it contains its
+ own registers, stack, counter etc.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+21.	Explain a scheduling algorithm?
+==>  There are various algorithms which are used by the Operating System to schedule the processes on the processor
+ in an efficient way.
+ There are the following algorithms which can be used to schedule the jobs.
+
+1. First Come First Serve
+2. Round Robin
+3. Shortest Job First
+4. Shortest remaining time first
+5. Priority based scheduling
+6. Highest Response Ratio Next
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+22.	Explain pre-emptive and non-preemptive scheduling?
+==> Preemptive Scheduling is a CPU scheduling technique that works by dividing time slots of CPU to a 
+given process. The time slot given might be able to complete the whole process or might not be able to it. 
+When the burst time of the process is greater than CPU cycle, it is placed back into the ready queue and 
+will execute in the next chance. This scheduling is used when the process switch to ready state.
+
+Algorithms that are backed by preemptive Scheduling are round-robin (RR), priority, SRTF (shortest 
+remaining time first).
+
+Non-preemptive Scheduling is a CPU scheduling technique the process takes the resource (CPU time) and
+ holds it till the process gets terminated or is pushed to the waiting state. No process is interrupted
+ until it is completed, and after that processor switches to another process.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+23.	Define the different scheduling algorithms
+==> 1. First Come First Serve
+It is the simplest algorithm to implement. The process with the minimal arrival time will get the CPU first. 
+The lesser the arrival time, the sooner will the process gets the CPU. It is the non-preemptive type of scheduling.
+
+2. Round Robin
+In the Round Robin scheduling algorithm, the OS defines a time quantum (slice). All the processes will get 
+executed in the cyclic way. Each of the process will get the CPU for a small amount of time (called time quantum) 
+and then get back to the ready queue to wait for its next turn. It is a preemptive type of scheduling.
+
+
+3. Shortest Job First
+The job with the shortest burst time will get the CPU first. The lesser the burst time, the sooner will
+ the process get the CPU. It is the non-preemptive type of scheduling.
+
+4. Shortest remaining time first
+It is the preemptive form of SJF. In this algorithm, the OS schedules the Job according to the remaining
+ time of the execution.
+
+5. Priority based scheduling
+In this algorithm, the priority will be assigned to each of the processes. The higher the priority, 
+the sooner will the process get the CPU. If the priority of the two processes is same then they will 
+be scheduled according to their arrival time.
+
+6. Highest Response Ratio Next
+In this scheduling Algorithm, the process with highest response ratio will be scheduled next. This reduces
+ the starvation in the system.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+24.	Explain booting process?
+==> Booting:-
+Booting is basically the process of starting the computer. When the CPU is first switched on it has 
+nothing inside the Memory. In order to start the Computer, load the Operating System into the Main Memory
+ and then Computer is ready to take commands from the User.
+
+Booting process:-
+	This is the initial process to start the system. When we press the CPU main switch, the bootstrap
+program get initialize in the system which sends the instruction to start the computer.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Que 25) Explain bias?
+ Ans : BIOS is Basic Input Output System is firmware is used to perform hardware initialization during booting process and to provide runtime services 
+      to operating system and program.BIOS firmware comes pre-installed in oparating system and it is first software to run when power on.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 26) Explain the difference among static memory allocation and dynamic memeory allocation.
+ Ans : Memory allocation is a process by which computer program and services are assigned with physical or virtual memory space.The memory allocation 
+      is done either before or at the time of program execution.Their are two types of memory allocation
+      A] Static Memory Allocation  :Static memory is allocated for declared variables by the complier.
+                                    The memory ais allocated during compile time.
+                                    It uses stack for managing the static memory allocation.
+                                    There is no memory re-usability.
+                                    Once memory is allocated its size can not be change.
+      B]Dynamic Memory Allocation  :Memory allocation is done at the time of execution(run time).
+                                    It uses heap for managing dynamic memory allocation.
+                                    There is memory re-usability and memory can be freed when not required.
+                                    When memory is allocated its size can be changed.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 27) UNIX commands like touch,sed,grep
+ Ans : A] touch :touch is standard command used in UNIX/Linux operating system.It is used to create file without any contents.The file created using touch
+                 command is empty.It can be used to create multiple files at a same time.
+          Syntax:-touch file1 file2 file3
+          Options: touch -a file1 :-This is used to change access time of file.
+                   touch -c file1 :-This is used to check whether file is created or not.
+                   touch -m file1 :- Used to change modification time.
+       B] sed  :It is cmmand for stream editor.It can perform lots of functions on file like searching,find and replace,insertion or deletion.
+                Mostly use to replace text.e.g sed 's/unix/linux/' file1.txt--> It replaces word unix with linux in file1
+       C] grep :It is uesd to search a string of character in file.The text search pattern is called as regular expression.
+                Syntax :grep pheonix file1,grep phoenix file1 file2 file3,grep phoenix *
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 28) Explain a process and process table?Define difference states of process.
+ Ans : Process is nothing but program in execution.As operating system is multiprogramming,so it needs to keep track of all process.Process has short lifetime 
+       than program.Process is runing instance of code. Process control block stores all information about process.It contains process state, program counter,
+       stack pointer.The  process table is an array of PCB's.
+       when process is created it goes from many states.
+       1) New  :When process is being created it is in new state.
+       2) Ready : When process is waiting to be assigned to a processor.
+       3) Running : Instructions are beign executed.
+       4) Waiting  :When process is waiting for some events to occure.
+       5) Terminated :The process has finished execution.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+29. Define the benefits of multithreaded programming?
+Ans: 
+1)Improved throughput.
+2)Simultaneous and fully symmetric use of multiple processors for computation and I/O
+3)Superior application responsiveness. 
+4)Improved server responsiveness. 
+5)Minimized system resource usage. 
+6)Program structure simplification.
+7)Better communication. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+30. Explain Thrashing?
+AnS: Thrashing is a condition or a situation when the system is spending a major portion of its time in servicing the page faults, 
+but the actual processing done is very negligible. 
+The basic concept involved is that if a process is allocated too few frames,
+then there will be too many and too frequent page faults.
+
+Thrashing occurs when a computer's virtual memory resources are overused, leading to a constant state of paging and page faults, inhibiting most 
+application-level processing. 
+It causes the performance of the computer to degrade or collapse. 
+The situation can continue indefinitely until the user closes some running applications or the active processes free up additional virtual memory resources.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+31. Explain Belady’s Anomaly?
+Ans:
+In the case of LRU and optimal page replacement algorithms, it is seen that the number of page faults will be reduced if we increase the number of frames.
+However, Balady found that, In FIFO page replacement algorithm, the number of page faults will get increased with the increment in number of frames.
+This is the strange behavior shown by FIFO algorithm in some of the cases. This is an Anomaly called as Belady'sAnomaly.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+32. Explain starvation and aging?
+Ans:
+A) Starvation: Is the problem that occurs when high priority processes keep executing and low priority processes get blocked for indefinite time. 
+In heavily loaded computer system, a steady stream of higher-priority processes can prevent a low-priority process from ever getting the CPU.
+
+B)Aging: To avoid starvation, we use the concept of Aging. In Aging, after some fixed amount of time quantum, we increase the priority of the low priority processes. 
+By doing so, as time passes, the lower priority process becomes a higher priority process.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+33.Explain a trap and trapdoor?
+Ans: Trapdoor is a secret undocumented entry point into a. program used to grant access without normal methods of. access authentication. 
+A trap is a software interrupt, usually the result of an. error condition, and is also a non maskable inerrupt and has highest priority.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+34.Explain a daemon?
+Ans: A daemon (also known as background processes) is a Linux or UNIX program that runs in the background. Almost all daemons have names
+that end with the letter "d". For example, httpd the daemon that handles the Apache server, or, sshd which handles SSH remote access
+connections. Linux often start daemons at boot time.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+35.Which application software's executed on OS?
+Ans: The second major category of software is application software. Application software is, essentially, software that allows the user 
+to accomplish some goal or purpose. For example, if you have to write a paper, you might use the application-software program Microsoft Word. 
+If you want to listen to music, you might use iTunes. To surf the web, you might use Internet Explorer or Firefox. Even a computer game
+ could be considered application software.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+36.Define daemon objects and thread objects?
+Ans:Daemon threads is a low priority thread that provide supports to user threads. These threads can be user defined and system defined 
+as well. ... These threads run in the background to perform tasks such as garbage collection. Daemon thread does allow JVM from existing 
+until all the threads finish their execution.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+37. Give commands for finding process ID.
+Answer :-
+1) Open the terminal application.
+2) Type the pidof command as follows to find PID for firefox process:
+:- pidof firefox
+Or use the ps command along with grep command as follows:
+:- ps aux | grep -i firefox
+3) To look up or signal processes based on name use:
+:- pgrep firefox
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+38. How to edit, rename and move file in Linux?
+Answer :-
+1) A file can be renamed during a move process using the mv command. You simply give the target path a different name. When mv moves
+ the file, it will be given a new name.
+2) To edit a file, create a file first using the cat command:
+
+cat > Demo.txt  
+The above command allows to enter the content of the file on the terminal, enter the content of the file, then press CTRL+D keys to save the file
+To edit this file, execute the below command to open with Vi editor:
+
+vi Demo.txt  
+The above command will open the file with the Vi editor in the normal mode.
+This file is open in normal mode, to switch it to insert mode press 'ESC' key followed by 'i' key. Place the cursor on your desired position 
+and enter some text. To save the file and exit from the editor, press the 'ESC' key, followed by :wq! Keys.
+Now, we have successfully edited a file using the Vi editor. The editor will be closed after this and back to the command line.
+3) To use mv to rename a file type mv , a space, the name of the file, a space, and the new name you wish the file to have. Then press Enter. 
+You can use ls to check the file has been renamed
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+39.  Give 5 commands in Linux with explanation
+ 1. ls –
+List directory contents. If you know windows you would know that the command dir is used to list the contents in a directory. In Linux, the ls
+ command is used to list out files and directories.
+2. cd /–
+Change the current directory. The forward slash is to be used in Linux.
+3. pwd – Print Working Directory
+One way to identify the directory you are working in is the pwd command
+
+It displays the current working directory path and is useful when directory changes are often
+4. mv – Move a file
+To move a file or rename a file you would use the mv command.
+5. rm –
+This command is used to remove files in a directory or the directory itself. A directory cannot be removed if it is not empty.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+40.  Which are deadlock handling situations?
+In the multiprogramming operating system, there are a number of processing which fights for a finite number of resources and sometimes waiting 
+process never gets a chance to change its state because the resources for which it is waiting are held by another waiting process. A set of a
+ process is called deadlock when they are waiting for the happening of an event which is called by some another event in the same set.
+
+Methods for handling deadlock
+1. Deadlock ignorance
+It is the most popular method and it acts as if no deadlock and the user will restart. As handling deadlock is expensive to be called of a lot of 
+codes need to be altered which will decrease the performance so for less critical jobs deadlock are ignored. Ostrich algorithm is used in deadlock
+ Ignorance. Used in windows, Linux etc.
+
+2. Deadlock prevention
+It means that we design such a system where there is no chance of having a deadlock.
+
+**Mutual exclusion:
+It can’t be resolved as it is the hardware property. For example, the printer cannot be simultaneously shared by several processes. This is very 
+difficult because some resources are not sharable.
+
+**Hold and wait:
+Hold and wait can be resolved using the conservative approach where a process can start it and only if it has acquired all the resources.
+
+**No pre-emption:
+In no pre-emption, we allow forceful pre-emption where a resource can be forcefully pre-empted. The pre-empted resource is added to the list of 
+resources where the process is waiting. The new process can be restarted only when it regains its old resources. Priority must be given to a process 
+which is in waiting for state.
+
+3. Deadlock avoidance
+Here whenever a process enters into the system it must declare maximum demand. To the deadlock problem before the deadlock occurs. This approach
+ employs an algorithm to access the possibility that deadlock would occur and not act accordingly. If the necessary condition of deadlock is in 
+place it is still possible to avoid feedback by allocating resources carefully.
+
+
+Methods for deadlock avoidance
+
+**Resource allocation graph
+
+This graph is also kind of graphical bankers' algorithm where a process is denoted by a circle Pi and resources is denoted by a rectangle RJ (.dots) 
+inside the resources represents copies.
+
+Presence of a cycle in the resources allocation graph is necessary but not sufficient condition for detection of deadlock. If the type of every resource
+ has exactly one copy than the presence of cycle is necessary as well as sufficient condition for detection of deadlock.
+
+**Bankers’s algorithm
+
+The resource allocation graph algorithms not applicable to the system with multiple instances of the type of each resource. So for this system Banker’s 
+algorithm is used.
+
+Here whenever a process enters into the system it must declare maximum demand possible.
+
+At runtime, we maintain some data structure like current allocation, current need, current available etc. Whenever a process requests some resources we
+ first check whether the system is in a safe state or not meaning if every process requires maximum resources then is there ant sequence in which request
+ can be entertaining if yes then request is allocated otherwise rejected.
+
+
+4. Detection and recovery
+When the system is in deadlock then one method is to inform the operates and then operator deal with deadlock manually and the second method is system 
+will automatically recover from deadlock. There are two ways to recover from deadlock:
+
+**Process termination:
+Deadlock can be eliminated by aborting a process. Abort all deadlock process. Abort is processed at a time until the deadlock cycle is eliminated. 
+This can help to recover the system from file deadlock.
+
+**Resources preemption:
+To eliminate deadlock using resources preemption, we prompt the same resources pas processes and give these resources to another process until the 
+deadlock cycle is broken.
+Here a process is partially rollback until the last checkpoint or and hen detection algorithm is executed.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------

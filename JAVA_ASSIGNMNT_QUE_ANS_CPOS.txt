@@ -1,0 +1,531 @@
+1.What is Java? 
+Ans:Java is an object-oriented programming language that produces software for multiple platforms. When a programmer writes a Java application, the compiled
+ code (known as bytecode) runs on most operating systems (OS), including Windows, Linux and Mac OS.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. What is a package in Java? List down various advantages of packages.
+Ans:Packages in Java
+A package is a collection of similar types of Java entities such as classes, interfaces, subclasses, exceptions, errors, and enums. A package can also
+ contain sub-packages.
+Advantages:
+ 1.Make easy searching or locating of classes and interfaces.
+2.Avoid naming conflicts.
+3.Implement data encapsulation (or data-hiding).
+4.Provide controlled access: The access specifiers protected and default have access control on package level. A member declared as protected is 
+accessible by classes within the same package and its subclasses. A member without any access specifier that is default specifier is accessible only by 
+classes in the same package.
+5.Reuse the classes contained in the packages of other programs.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Explain JDK, JRE and JVM?
+Ans:
+JDK contains tools required to write Java programs, and JRE to execute them.
+It includes a compiler, Java application launcher, Appletviewer, etc.
+Compiler converts code written in Java into byte code.
+JRE
+JRE contains class libraries, JVM, and other supporting files. It does not contain any tool for Java development like a debugger, compiler, etc.
+It uses important package classes like math, swingetc, util, lang, awt, and runtime libraries.
+If you have to run Java applets, then JRE must be installed in your system.
+JVM
+JVM provides a platform-independent way of executing Java source code.
+It has numerous libraries, tools, and frameworks.
+Once you run Java program, you can run on any platform and save lots of time.
+JVM comes with JIT(Just-in-Time) compiler that converts Java source code into low-level machine language. Hence, it runs more faster as a regular application.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Explain public static void main(String args[]) in Java.
+Ans:public:Access modifier.
+    static:no need to create object.
+    void:return null.
+    main:method name.
+    String:Data type.
+     args:Datatype name.
+    []:size.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+5. What are the differences between C++ and Java?
+Ans:C++ uses only compiler, whereas Java uses compiler and interpreter both.
+C++ supports both operator overloading & method overloading whereas Java only supports method overloading.
+C++ supports manual object management with the help of new and delete keywords whereas Java has built-in automatic garbage collection.
+C++ supports structures whereas Java doesn’t supports structures.
+C++ supports unions while Java doesn’t support unions.
+Que  6) WHY JAVA IS PLATFORM INDEPENDENT ?
+Ans :  Java is platform independent because it is different from other languages like C, C++, etc. which are 
+compiled into platform specific machines while Java is a write once, run anywhere language. A platform is the 
+hardware or software environment in which a program runs.
+
+There are two types of platforms software-based and hardware-based. Java provides a software-based platform.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Que 7) What are wrapper classes in java ?
+Ans : The wrapper class in Java provides the mechanism to convert primitive into object and object into primitive.
+
+Since J2SE 5.0, autoboxing and unboxing feature convert primitives into objects and objects into primitives automatically. 
+The automatic conversion of primitive into an object is known as autoboxing and vice-versa unboxing.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 8) Why pointers are not used in java ?
+Ans :  Java doesn’t have pointers; Java has references.
+Reference: A reference is a variable that refers to something else and can be used as an alias for that something else.
+Pointer: A pointer is a variable that stores a memory address, for the purpose of acting as an alias to what is stored at that address.
+Java doesn’t have pointers (in the C/C++ sense) because it doesn’t need them for general purpose OOP programming. Furthermore, adding pointers 
+to Java would undermine security and robustness and make the language more complex.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 9) List some features of java ?
+Ans : 1)Simple
+      2)Object-Oriented
+      3)Portable
+      4)Platform independent
+      5)Secured
+      6)Robust
+      7)Architecture neutral
+      8)Interpreted
+      9)High Performance
+      10)Multithreaded
+      11)Distributed
+      12)Dynamic
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 10) Why is java Architectural Neutral ?
+Ans : Java is architecture neutral because there are no implementation dependent features, for example, the size of primitive types is fixed.
+
+In C programming, int data type occupies 2 bytes of memory for 32-bit architecture and 4 bytes of memory for 64-bit architecture. However,
+ it occupies 4 bytes of memory for both 32 and 64-bit architectures in Java.
+
+                                                              
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q 11- How java enabled high performance?
+
+A 11- Java enabled High performance by introducing JIT- Just In Time compiler , JIT helps the compiler to compile the code On demand basis i.e
+ which ever method is called only that method block will get compiled making compilation fast n time-efficient. This makes the java delivering 
+high performance.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q 12- Why Java is considered dynamic?
+ 
+A 12-  Anything that happens at run time is considered as Dynamic. Java is considered as Dynamic because of Byte code i.e. a class file.
+ A source code written in one platform, that can be executed in any platform. And it also loads the class files at run time. 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q 13-  What is Java Virtual Machine and how it is considered in context of Java’s platform independent feature?
+
+A 13- Java Virtual Machine (JVM) is an engine that provides runtime environment to drive the Java Code or applications. It converts Java
+ bytecode into machines language. JVM is a part of Java Runtime Environment (JRE). 
+Java is called platform independent because of Java Virtual Machine. As different computers with the different operating system have their 
+JVM, when we submit a . class file to any operating system, JVM interprets the bytecode into machine level language.
+
+Note:Java is platform-independent but JVM is platform dependent
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q 14- List two Java IDE’s?
+ 
+A 14- 1) Eclipse
+      2) IntelliJ Idea
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q 15- Why Java is called as “Platform” ?
+
+A 15- Java programs can run on any OS or processor. ... This bytecode is sent to Java virtual machine (JVM) which resides in the RAM of any 
+operating system. JVM recognizes the platform it is on and converts the bytecodes into native machine code. Hence java is called platform 
+independent language.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+16. Is Java Pure-Object oriented Language ?
+
+Ans: Pure Object Oriented Language which supports or have features which treats everything inside program as objects. It doesn’t support 
+primitive datatype(like int, char, float, bool, etc.).
+Java is not a pure object-oriented programming language because it supports primitive data types and everything is not an object in Java.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+17. Which version of java u have learned?Name some of the new features added to it?
+
+Ans:a) forEach() method in Iterable interface
+    b) default and static methods in Interfaces
+    c) Functional Interfaces and Lambda Expressions
+    d) Java Stream API for Bulk Data Operations on Collections
+    e) Java Time API
+    f) Java IO improvements
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+18. What gives Java its 'write once and run anywhere' nature?
+
+Ans:In java programming it is not directly converted into code understood by hardware,rather it converted into bytecode(.classfile),which
+ is interpreted by jvm,so once compiled ,can be run anywhere which has jvm.
+
+-------------------------------------------------------------------------------------------------------- ------------------------------------------------------
+
+19. Difference between path and classpath.
+
+Ans: path variable is use to set the path for all java software tool like javac(.exe),all exe files.
+     classpath veriable is use to set the path for java classes(.class).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+20. What is the signature of main function in java ?
+Ans:public static void main(String[] args)
+    public:Access Modifier.
+    void:Return type.
+    static:no need to create object.
+    String:Data type.
+    []-size.
+    args-data type name.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+21). What is the difference between JDK and JRE?
+
+ The JRE is the Java Runtime Environment. It is a package of everything necessary to run a compiled Java program, including the 
+Java Virtual Machine (JVM), the Java Class Library, the java command, and other infrastructure. However, it cannot be used to create new programs.
+
+The JDK is a superset of the JRE, and contains everything that is in the JRE, plus tools such as the compilers and debuggers necessary
+ for developing applets and applications. Java Development Kit is needed for developing java applications. It is a bundle of software
+ that you can use to develop Java based applications.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+22]. What is JVM ? What it does?
+
+Java Virtual Machine, or JVM, loads, verifies and executes Java bytecode. It is known as the interpreter or the core of Java programming 
+language because it executes Java programming. 
+JVM is specifically responsible for converting bytecode to machine-specific code and is necessary in both JDK and JRE. It is also
+ platform-dependent and performs many functions, including memory management and security. In addition, JVM can run programs written
+ in other programming languages that have been translated to Java bytecode.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+23]. Why JVM is called as “virtual machine”?
+A virtual machine (VM) is a software implementation of a machine (i.e. a computer) that executes programs like a physical machine.
+ Originally, Java was designed to run based on a virtual machine separated from a physical machine for implementing WORA (Write Once Run Anywhere), 
+although this goal has been mostly forgotten. Therefore, the JVM runs on all kinds of hardware to execute the Java Bytecode without changing
+ the Java execution code.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+24.].Components of JVM:
+
+As the JVM performs one of the most crucial tasks for Java, it has many parts for that purpose. We’ll discuss each element in detail:
+
+1).ClassLoader Subsystem
+ClassLoader is a subsystem of the Java Virtual Machine which loads class files. It’s the first component of the architecture as it loads
+ the program so other tasks can take place. We can divide its working into the following three sections:
+--Loading
+This component loads the classes. It has the BootStrap ClassLoader for loading classes belonging to the bootstrap classpath. 
+--Linking
+Here,  subsystem verify  the bytecode is correct or not. If the bytecode isn’t proper, it will generate the verification error.
+--Initialization
+initializing for execution of code
+
+2). Runtime Data Area
+--Method Area
+The method area stores all the class-level data. Every JVM has only one method area.
+--Heap Area
+The heap area stores all the Objects and their instance arrays and variables.
+--Stack Area
+This section creates unique runtime stacks for every threat and makes an entry for every method call in the stack memory (also known as Stack Frame).
+3.). Execution Engine
+The Execution Engine executes the bytecode. It reads and executes it piece by piece. It also has different components:
+--Interpreter
+This component interprets the bytecode quickly but is a little slow in execution.
+--JIT Compiler
+When the Execution Engine finds repeated code, it uses the JIT(just in time ) Compiler instead of the interpreter. 
+--Garbage Collector
+The final component of the Execution Engine is the garbage collector which gathers and gets rid of unreferenced objects. 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+25.]. What is the difference between Java compiler ( javac ) and JIT ? 
+
+Java uses javac (compiler) to convert the java code to byte code (.class file).
+
+When we run this code using JVM, it internally converts the byte code to system understandable code using an interpreter.
+
+Instead of executing a piece of code, again and again, JVM identifies them as “hot spots” and compiles them using Just in time
+ compiler and, later reuses the same when required.
+
+A compiler compiles (translates) the given program to executable code (whole code at a time).
+
+A JIT compiler performs a similar task but it is used by JVM internally, to translate the hotspots in the byte code.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+26. Is Empty .java file name a valid source file name?
+====  An empty .java file is a perfectly valid source file.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+27. Is JRE different for different Platforms ?
+===JRE is also platform dependent. That means we have different JRE versions for different platforms.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+28. Difference between C++ and java in terms of object creation.
+=== C++ is both a procedural and object-oriented programing language. Hence, C++ has features specific to procedural languages 
+as well as features of object-oriented programming language.
+
+Java is a completely object-oriented programming language.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+29. Who invokes main() function ?
+=== JVM or INterpreter
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+30. What is .class file known as ?
+=== compiled file
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q 31) Can we define more than one public class in a java source code?What is the rule of public class and file name?
+  Ans : Each source file i.e java file can have only one public class ,so we can not define more than one public class in java
+        The main method is called by outside program i.e JVM. We can use multiple classes but use only one public class where 
+        main method defined.
+        Rule : The name of java file must be same as the name of public class where the main method defined in it .
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Que 32) What is JIT Compiler?
+ Ans :JIT Stands for Just In Time compiler.JIT is a integral part of JVM. Compilers ia a program that converts high level language 
+      to machine code. It is component of the runtime environment that improves the performance of java applications by compiling 
+      bytecode to native machine code at runtime. As java program contains classes ,JVM converts that .class file into bytecodes.
+      Advantages :1) It requires less memory usage.
+                  2) Code optimization is done at runtime.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 33) How many types of memory areas are allocated by JVM ?
+ Ans :Java Virtual Machine is a software which takes bytecode(.class file) and convert into machine readable format.
+      Their are 5 types of meory location allocated by JVM as follows:
+      1) Stack :Storage all objects(Reference type).It is for static memory allocation.Programmer use this memory if they knows in advance how 
+          much memory is allocated to store data.
+      2) Heap : Store local variables.It is for allocating memory dynamically.
+      3)Program Counter Register:It stores address of next instrution to be executed.
+      4)Execution Engine:It has a virtual processor,interpreter to interpret bytecode instruction one by one and JIT
+      5)Native method stacks:It contains all native methods use by the applications[Native code is programming code that is configured to run on specific processor.]
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 34) What is the rule for local member in java ?
+ Ans : Local members/variables are the variables which are declared within the body of method.The scope of that variables is only within that function/methods.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 35) What are the various access specifiers in java?
+ Ans :Access Specifiers  are the keyword in Object oriented programming language tha set the accessability of classes,methods or other members.
+     By using access specifiers ,particular class ,method ,variables can be restricted to access or hidden from other classes.
+     There are two types of access modifiers A] Access specifiers B] Non Access specifiers
+     Non Access Specifiers: static, final,abstarct like
+    Access Specifiers:
+    1) Default :whenever a specific access specifier is not specified then it is assumed that it is default.The scope of default is within the package.
+    2) public :It is most common access level.when public access specifier is used then this  is access from within or outside class or within or outside package.
+    3) protected:The scope of this access specifiers is within only package.it is mostly use in inheritance.
+    4) private :when entity is used as private then it cannot be access outside class.Scope is within class only.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+36. What is the rule for local member in java.
+Ans: 
+1) Local variables cannot use any of the access level since their scope is only inside the method.
+2) Final is the Only Non Access Modifier that can be applied to a local variable.
+3) Local variables are not assigned a default value, hence they need to be initialized.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+37. What is native code?
+Ans: 
+1) Native code refers to programming code that is configured to run on a specific processor. 
+2) Native code will generally not function if used on a processor other than the one it was specifically written for unless it is allowed to run over an emulator.
+3)Because native code is tailor-made for a specific processor, programs written using such code should (theoretically) run optimally on the native processor. 
+4)This limitation has steadily decreased since manufacturers have started configuring their processors to work with the same kind of protocols and logic sequences.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+38. Why there is no sizeof operator in java ?
+Ans:
+1) The sizeof() operator is commonly used in C. 
+2) All primitive values have a predefined size in java so sizeof operator is not used in java.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+39. What kinds of programs u can develop using Java ?
+Ans:
+1)Mobile Applications.
+2)Internet of Things (IoT) Devices.
+3)Cloud Applications.
+4)Web Applications.
+5)Chatbots.
+6)Games.
+7)Enterprise Applications.
+8)Scientific Applications.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+40. U have reference type as a member of class. What is the default value it gets?
+Ans:
+1) Reference variable is used to point object/values.
+2) Classes, interfaces, arrays, enumerations, and, annotations are reference types in Java. 
+   Reference variables hold the objects/values of reference types in Java.
+3) Reference variable can also store null value. 
+4)By default, if no object is passed to a reference variable then it will store a null value.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+41. What is the job done by classloader ?
+Ans: It loads classes from different resources. Java ClassLoader is used to load the classes at run time. In other words, JVM performs the 
+linking process at runtime. Classes are loaded into the JVM according to need.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+42. Explain the hierarchy of classloaders in java.
+Ans: The ClassLoader Delegation Hierarchy Model always functions in the order Application ClassLoader->Extension ClassLoader->Bootstrap ClassLoader.
+ The Bootstrap ClassLoader is always given the higher priority, next is Extension ClassLoader and then Application ClassLoader.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+43. What is the role played by Bytecode Verifier ?
+Ans: The bytecode verifier acts as a sort of gatekeeper: it ensures that code passed to the Java interpreter is in a fit state to be executed and can run 
+without fear of breaking the Java interpreter. Imported code is not allowed to execute by any means until after it has passed the verifier's tests.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+44. What are the memory areas allocated by JVM ?
+Ans:Class(Method) Area.
+    Heap.
+    Stack.
+    Program Counter Register.
+    Native Method Stack.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+45. What kinds of programs u can develop using Java
+Ans:Mobile App Development.
+    Desktop GUI Applications.
+    Web-based Applications.
+    Gaming Applications.
+    Big Data Technologies.
+    Distributed Applications.
+    Cloud-based Applications.
+    IoT Applications.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+46. When parseInt() method can be used?
+
+Answer :-
+The parseInt function converts its first argument to a string, parses that string, then returns an integer .
+While operating upon strings, there are times when we need to convert a number represented as a string into an integer type. The method generally used to
+ convert String to Integer in Java is parseInt() .This is also known as Explicit type casting . We can typecast other primitive data types also only
+ difference is that we have to mention that particular datatype after parse Method. 
+E.g.
+public class ParseInt0 
+{
+       public static void main(String args[])
+         {
+           int x = Integer.parseInt("12");
+           double c = Double.parseDouble("12");
+
+           System.out.println(Integer.parseInt("12"));
+           System.out.println(Double.parseDouble("12"));
+        }
+}
+Output :-
+12....
+12.0.....
+
+---------------------------------------------------------------------------------**********************---------------------------------------------------------
+
+47. What is finalized() method ?
+
+Finalize() is the method of Object class. This method is called just before an object is garbage collected. finalize() method overrides to dispose system
+ resources, perform clean-up activities and minimize memory leaks.
+“This method is inherently unsafe. It may result in finalizers being called on live objects while other threads are concurrently manipulating those objects,
+ resulting in erratic behavior or deadlock.”
+
+------------------------------------------------------------------------------************************------------------------------------------------------------
+48. Difference between C++ pointer and Java reference.
+
+in Java A reference is a variable that refers to something else and can be used as an alias for that something else.
+
+in C++  A pointer is a variable that stores a memory address, for the purpose of acting as an alias to what is stored at that address.
+
+In java programming languages, a reference is a variable that refers to an object and using which we can utilize the properties and functions of an object.
+When a reference variable is passed as an argument the memory address of the object in heap is passed and the modifications are done directly on the object itself.
+
+-------------------------------------------------------------------------------*************************------------------------------------------------------------
+49. U have reference type as a member of class. What is the default value it gets?
+
+The default value of a reference type is null. It means that if a reference type is a static class member or an instance field and not assigned 
+an initial value explicitly, it will be initialized automatically and assigned the value of null. 
+
+Although object references with a value of null do not refer to any object on the heap, objects set to null can be referenced in code without 
+receiving compile-time or runtime errors:
+
+-------------------------------------------------------------------------------**************************-----------------------------------------
+50. What are the expressions allowed in switch block of java ?
+
+Use the switch statement to select one of many code blocks to be executed.
+Syntax:- 
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+The switch expression is evaluated once.
+The value of the expression is compared with the values of each case.
+If there is a match, the associated block of code is executed.
+
+Basically, the expression can be byte, short, char, and int primitive data types. Beginning with JDK7, it also works with enumerated types 
+( Enums in java), the String class and Wrapper classes.
+
+------------------------------------------------------------------------------------***************************------------------------------
+ 
+
+
+
